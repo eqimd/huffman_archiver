@@ -2,13 +2,13 @@
 #include <cstring>
 
 bool check_arguments(const char* arg1, const char* arg2) {
-	bool valid_arg1 =
-		(strcmp(arg1, "-f") == 0) ||
-		(strcmp(arg1, "--file") == 0);
-		
-	bool valid_arg2 = 
-		(strcmp(arg2, "-o") == 0) ||
-		(strcmp(arg2, "--output") == 0);
+    bool valid_arg1 =
+	(strcmp(arg1, "-f") == 0) ||
+	(strcmp(arg1, "--file") == 0);
+
+    bool valid_arg2 = 
+	(strcmp(arg2, "-o") == 0) ||
+	(strcmp(arg2, "--output") == 0);
 		
     return valid_arg1 && valid_arg2;
 }
